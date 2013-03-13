@@ -81,6 +81,18 @@
             </LinearLayout>
         </LinearLayout>
 
+        <com.lianghanzhen.ExpandableTextView
+            android:id="@+id/set_text_after_more_than_collapse_lines"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <com.lianghanzhen.ExpandableTextView
+                android:id="@+id/set_text_after_less_than_collapse_lines"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+
     </LinearLayout>
 </ScrollView>
 

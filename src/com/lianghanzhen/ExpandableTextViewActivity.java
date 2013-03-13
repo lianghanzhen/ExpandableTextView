@@ -86,6 +86,9 @@ public class ExpandableTextViewActivity extends Activity {
         child.setTextColor(Color.WHITE);
         child.setBackgroundColor(Color.GRAY);
         container.addView(child, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        ((ExpandableTextView) findViewById(R.id.set_text_after_more_than_collapse_lines)).setText("Line #1: ExpandableTextView set text after\nLine #2: Collapse Lines is 3\nLine #3\nLine #4\nLine #5\nLine #6");
+        ((ExpandableTextView) findViewById(R.id.set_text_after_less_than_collapse_lines)).setText("Line #1: ExpandableTextView set text after\nLine #2: Collapse Lines is 3");
     }
 
     private void showToast(String message) {
