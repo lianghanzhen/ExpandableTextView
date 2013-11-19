@@ -76,7 +76,12 @@ public class ExpandableTextView extends TextView {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         if (mOriginalHeight == INVALID_HEIGHT) {
-            mOriginalHeight = getMeasuredHeight();
+            if(getText() == null || "".equals(getText())){
+                mOriginalHeight == INVALID_HEIGHT;
+                return;
+            }
+            else
+                mOriginalHeight = getMeasuredHeight();
         }
         final int originalHeightMode = MeasureSpec.getMode(heightMeasureSpec);
         final int originalWidth = MeasureSpec.getSize(widthMeasureSpec);
